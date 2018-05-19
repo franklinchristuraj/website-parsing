@@ -1,0 +1,2 @@
+function _pit_tag_event(category,action,label){window.dataLayer=dataLayer||[];dataLayer.push({'event':category,'category':category,'action':action,'label':label});}
+jQuery(document).ready(function($){$('a[data-tag-category][data-tag-action][data-tag-label]').click(function(){_pit_tag_event($(this).attr("data-tag-category"),$(this).attr("data-tag-action"),$(this).attr("data-tag-label"));});});
